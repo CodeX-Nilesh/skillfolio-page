@@ -62,7 +62,7 @@ const About = () => {
                 variants={itemVariants}
                 className="text-lg text-muted-foreground mb-8"
               >
-                Based in San Francisco, I'm dedicated to turning complex problems
+                Based in India, I'm dedicated to turning complex problems
                 into simple, intuitive designs. My approach combines technical expertise
                 with creative thinking to build products that people love to use.
               </motion.p>
