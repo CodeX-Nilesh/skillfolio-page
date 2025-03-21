@@ -1,10 +1,11 @@
-
 import { motion } from 'framer-motion';
 import Layout from '@/components/Layout';
 import { ArrowRight, BarChart, Code, Globe, Heart, User, Zap } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const About = () => {
+  const navigate = useNavigate();
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -71,13 +72,13 @@ const About = () => {
                 variants={itemVariants}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <Link 
-                  to="/portfolio" 
+                <button 
+                  onClick={() => navigate('/portfolio')}
                   className="inline-flex items-center justify-center px-6 py-3 font-medium bg-primary text-primary-foreground rounded-full transition-all hover:opacity-90"
                 >
                   View My Work
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </button>
                 
                 <Link 
                   to="/contact" 
@@ -102,12 +103,10 @@ const About = () => {
           </motion.div>
         </div>
         
-        {/* Background decorative elements */}
         <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute top-10 -right-10 w-60 h-60 bg-primary/5 rounded-full blur-3xl"></div>
       </section>
       
-      {/* My Story Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
@@ -188,7 +187,6 @@ const About = () => {
         </div>
       </section>
       
-      {/* Core Values */}
       <section className="py-20 bg-secondary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
