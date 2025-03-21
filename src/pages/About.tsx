@@ -94,7 +94,7 @@ const About = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-3xl transform -rotate-6"></div>
               <img 
-                src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?auto=format&fit=crop&w=800&q=80" 
+                src="/lovable-uploads/86866d1f-3fbd-4f43-af4a-e42b291aeb83.png" 
                 alt="Nilesh Gupta - Web Developer"
                 className="relative z-10 rounded-2xl object-cover w-full h-full shadow-lg"
               />
