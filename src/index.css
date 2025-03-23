@@ -102,4 +102,42 @@
   .animate-enter-active {
     @apply opacity-100 transform;
   }
+
+  /* New lighting effects */
+  .glow-text {
+    @apply text-white relative;
+    text-shadow: 0 0 10px rgba(100, 108, 255, 0.5), 0 0 20px rgba(100, 108, 255, 0.3);
+  }
+  
+  .glow-border {
+    @apply relative overflow-hidden;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.3), inset 0 0 10px rgba(139, 92, 246, 0.3);
+  }
+  
+  .glow-card {
+    @apply relative overflow-hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4), 0 0 30px rgba(100, 108, 255, 0.1);
+  }
+  
+  .glow-button {
+    @apply relative overflow-hidden transition-all duration-300;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+  }
+  
+  .glow-button:hover {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.4), 0 0 30px rgba(139, 92, 246, 0.2);
+  }
+  
+  .light-beam {
+    @apply absolute pointer-events-none opacity-0 transition-opacity duration-500;
+    background: radial-gradient(circle at center, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+  }
+  
+  .glow-card:hover .light-beam {
+    @apply opacity-100;
+  }
 }
