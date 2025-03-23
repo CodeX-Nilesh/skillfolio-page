@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, BarChart, Code, Globe, Heart, Layers, Paintbrush, User, Zap } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Layout from '@/components/Layout';
 
 const Index = () => {
@@ -11,6 +11,7 @@ const Index = () => {
   const aboutRef = useRef<HTMLElement>(null);
   const skillsRef = useRef<HTMLElement>(null);
   const contactRef = useRef<HTMLElement>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsLoaded(true);
@@ -91,7 +92,7 @@ const Index = () => {
               </button>
               
               <button 
-                onClick={() => scrollToRef(contactRef)}
+                onClick={() => navigate('/contact')}
                 className="inline-flex items-center justify-center px-6 py-3 font-medium bg-transparent border border-primary text-primary rounded-full transition-all hover:bg-primary/5"
               >
                 Contact Me
@@ -134,7 +135,7 @@ const Index = () => {
                 variants={itemVariants}
                 className="text-lg text-muted-foreground mb-6"
               >
-                A passionate web developer with over 5 years of experience creating
+                A passionate web developer with over 3 years of experience creating
                 beautiful, functional, and user-centered digital experiences.
               </motion.p>
               
@@ -160,7 +161,7 @@ const Index = () => {
                 </button>
                 
                 <button 
-                  onClick={() => scrollToRef(contactRef)}
+                  onClick={() => navigate('/contact')}
                   className="inline-flex items-center justify-center px-6 py-3 font-medium bg-transparent border border-primary text-primary rounded-full transition-all hover:bg-primary/5"
                 >
                   Contact Me

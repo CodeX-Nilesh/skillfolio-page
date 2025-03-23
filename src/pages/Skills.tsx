@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -111,7 +110,7 @@ const Skills = () => {
                   {
                     name: "React.js",
                     level: 95,
-                    yearsExp: 4,
+                    yearsExp: 3,
                     description: "Building complex user interfaces with modern React concepts including hooks, context API, and state management solutions."
                   },
                   {
@@ -129,7 +128,7 @@ const Skills = () => {
                   {
                     name: "CSS & SASS",
                     level: 90,
-                    yearsExp: 5,
+                    yearsExp: 3,
                     description: "Creating beautiful and responsive layouts with modern CSS techniques."
                   },
                   {
@@ -147,13 +146,13 @@ const Skills = () => {
                   {
                     name: "JavaScript",
                     level: 95,
-                    yearsExp: 6,
+                    yearsExp: 3,
                     description: "Proficient in modern JavaScript (ES6+) patterns and best practices."
                   },
                   {
                     name: "HTML5",
                     level: 98,
-                    yearsExp: 6,
+                    yearsExp: 3,
                     description: "Creating semantic and accessible markup for the modern web."
                   },
                   {
@@ -324,7 +323,6 @@ const Skills = () => {
               </div>
             </TabsContent>
             
-            {/* Add similar TabsContent for other tabs */}
             {["mobile", "tools", "languages"].map((tab) => (
               <TabsContent key={tab} value={tab} className="mt-6">
                 <div className="text-center py-12">
@@ -346,7 +344,6 @@ const Skills = () => {
         </div>
       </section>
       
-      {/* Skills Timeline */}
       <section className="py-20 bg-secondary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -357,7 +354,6 @@ const Skills = () => {
           </div>
           
           <div className="relative">
-            {/* Vertical timeline line */}
             <div className="absolute left-1/2 top-0 bottom-0 w-px bg-border -translate-x-1/2"></div>
             
             <div className="space-y-12">
@@ -375,16 +371,10 @@ const Skills = () => {
                   skills: ["React", "Node.js", "MongoDB", "Express"]
                 },
                 {
-                  year: "2019 - 2021",
+                  year: "2020 - 2021",
                   title: "Web Developer",
                   description: "Developing responsive websites and web applications.",
                   skills: ["JavaScript", "HTML5", "CSS3", "jQuery"]
-                },
-                {
-                  year: "2017 - 2019",
-                  title: "Junior Developer",
-                  description: "Starting my journey in web development, focusing on frontend basics.",
-                  skills: ["HTML", "CSS", "JavaScript"]
                 }
               ].map((milestone, index) => (
                 <motion.div
@@ -397,7 +387,6 @@ const Skills = () => {
                 >
                   <div className="hidden md:block w-5/12"></div>
                   
-                  {/* Timeline dot */}
                   <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary"></div>
                   
                   <div className="z-10 w-full md:w-5/12 p-6 glass rounded-xl border-subtle">
