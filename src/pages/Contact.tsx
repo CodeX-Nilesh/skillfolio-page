@@ -122,7 +122,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-sm font-medium text-muted-foreground mb-1">Location</h3>
-                      <p>San Francisco, CA, United States</p>
+                      <p>Kolkata, West Bengal, India</p>
                     </div>
                   </div>
                   
@@ -132,7 +132,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-sm font-medium text-muted-foreground mb-1">Email</h3>
-                      <a href="mailto:hello@example.com" className="hover:underline">hello@example.com</a>
+                      <a href="mailto:this-guptajiejeiejej@gmail.com" className="hover:underline">this-guptajiejeiejej@gmail.com</a>
                     </div>
                   </div>
                   
@@ -297,8 +297,8 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass overflow-hidden rounded-xl border-subtle h-[400px]">
             <iframe
-              title="San Francisco Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100940.14241827482!2d-122.43759999999998!3d37.75769999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1619826097597!5m2!1sen!2sus"
+              title="Kolkata Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.35231272693!2d88.26494096565049!3d22.535564939391236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1716223174458!5m2!1sen!2sin"
               className="w-full h-full border-0"
               loading="lazy"
               allowFullScreen
@@ -311,3 +311,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
