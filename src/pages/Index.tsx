@@ -320,68 +320,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Core Values Section */}
-      <section className="py-20 bg-secondary/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Core Values</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Principles that guide my work and professional relationships
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <User className="h-6 w-6" />,
-                title: "User-Centered Design",
-                description: "I believe in creating solutions that prioritize the needs and experiences of the end users above all else."
-              },
-              {
-                icon: <Zap className="h-6 w-6" />,
-                title: "Efficiency",
-                description: "I strive to optimize processes and code for maximum performance and maintainability."
-              },
-              {
-                icon: <Code className="h-6 w-6" />,
-                title: "Clean Code",
-                description: "I'm committed to writing clean, well-documented code that's easy to understand and maintain."
-              },
-              {
-                icon: <Globe className="h-6 w-6" />,
-                title: "Accessibility",
-                description: "I ensure my projects are accessible to all users, regardless of their abilities or disabilities."
-              },
-              {
-                icon: <BarChart className="h-6 w-6" />,
-                title: "Data-Driven",
-                description: "I make decisions based on data and metrics whenever possible, measuring impact and outcomes."
-              },
-              {
-                icon: <Heart className="h-6 w-6" />,
-                title: "Passion",
-                description: "I bring enthusiasm and dedication to every project, constantly seeking to improve and innovate."
-              }
-            ].map((value, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="glass p-8 rounded-xl border-subtle hover-translate"
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary">
-                  {value.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-muted-foreground">{value.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Featured Work Section */}
       <section ref={portfolioRef} className="py-20 bg-secondary/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
