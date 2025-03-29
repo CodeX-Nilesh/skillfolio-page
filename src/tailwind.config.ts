@@ -73,6 +73,12 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			boxShadow: {
+				'inner-highlight': 'inset 0 1px 0 0 rgba(255,255,255,0.1)',
+				'glow-sm': '0 0 10px rgba(65, 105, 225, 0.2)',
+				'glow': '0 0 15px rgba(65, 105, 225, 0.3)',
+				'glow-lg': '0 0 30px rgba(65, 105, 225, 0.4)',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },
@@ -115,8 +121,12 @@ export default {
 					'50%': { opacity: '0.5' }
 				},
 				glow: {
-					'0%, 100%': { boxShadow: '0 0 10px rgba(139, 92, 246, 0.3)' },
-					'50%': { boxShadow: '0 0 20px rgba(139, 92, 246, 0.6)' }
+					'0%, 100%': { boxShadow: '0 0 10px rgba(65, 105, 225, 0.3)' },
+					'50%': { boxShadow: '0 0 20px rgba(65, 105, 225, 0.6)' }
+				},
+				shimmer: {
+					'0%': { backgroundPosition: '-200% 0' },
+					'100%': { backgroundPosition: '200% 0' }
 				}
 			},
 			animation: {
@@ -130,9 +140,15 @@ export default {
 				'blur-in': 'blur-in 0.5s ease-out',
 				'float': 'float 5s ease-in-out infinite',
 				'pulse': 'pulse 3s ease-in-out infinite',
-				'glow': 'glow 3s ease-in-out infinite'
+				'glow': 'glow 3s ease-in-out infinite',
+				'shimmer': 'shimmer 8s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'shimmer': 'linear-gradient(90deg, transparent, rgba(65, 105, 225, 0.1), transparent)'
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
