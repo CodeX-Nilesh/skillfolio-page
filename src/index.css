@@ -7,44 +7,44 @@
 
 @layer base {
   :root {
-    --background: 195 89% 57%;
+    --background: 220 13% 18%;
     --foreground: 210 40% 98%;
 
-    --card: 195 60% 45%;
+    --card: 220 14% 14%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 195 60% 45%;
+    --popover: 220 14% 14%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 200 98% 50%;
+    --primary: 220 100% 68%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 195 70% 40%;
+    --secondary: 220 16% 22%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 195 30% 70%;
+    --muted: 220 10% 40%;
     --muted-foreground: 210 40% 90%;
 
-    --accent: 195 70% 40%;
+    --accent: 220 100% 68%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 195 50% 75%;
-    --input: 195 50% 75%;
-    --ring: 200 98% 60%;
+    --border: 220 16% 30%;
+    --input: 220 16% 30%;
+    --ring: 220 100% 68%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 195 70% 30%;
+    --sidebar-background: 220 16% 12%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 200 98% 60%;
+    --sidebar-primary: 220 100% 68%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 195 50% 45%;
+    --sidebar-accent: 220 16% 24%;
     --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 195 50% 50%;
-    --sidebar-ring: 200 98% 60%;
+    --sidebar-border: 220 16% 20%;
+    --sidebar-ring: 220 100% 68%;
   }
 }
 
@@ -80,15 +80,15 @@
 /* Glass Morphism and Blurs */
 @layer components {
   .glass {
-    @apply bg-white/30 backdrop-blur-md backdrop-saturate-150 shadow-sm rounded-lg;
+    @apply bg-secondary/30 backdrop-blur-md backdrop-saturate-150 shadow-sm rounded-lg;
   }
   
   .glass-subtle {
-    @apply bg-white/20 backdrop-blur-md backdrop-saturate-150 shadow-sm rounded-lg;
+    @apply bg-secondary/20 backdrop-blur-md backdrop-saturate-150 shadow-sm rounded-lg;
   }
   
   .border-subtle {
-    @apply border border-white/20;
+    @apply border border-white/10;
   }
   
   .hover-translate {
@@ -106,31 +106,31 @@
   /* New lighting effects */
   .glow-text {
     @apply text-white relative;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+    text-shadow: 0 0 10px rgba(100, 149, 237, 0.6), 0 0 20px rgba(100, 149, 237, 0.4);
   }
   
   .glow-border {
     @apply relative overflow-hidden;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(100, 149, 237, 0.4), inset 0 0 10px rgba(100, 149, 237, 0.3);
   }
   
   .glow-card {
     @apply relative overflow-hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 0 0 30px rgba(30, 144, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 30px rgba(100, 149, 237, 0.2);
   }
   
   .glow-button {
     @apply relative overflow-hidden transition-all duration-300;
-    box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+    box-shadow: 0 0 10px rgba(100, 149, 237, 0.3);
   }
   
   .glow-button:hover {
-    box-shadow: 0 0 15px rgba(30, 144, 255, 0.5), 0 0 30px rgba(30, 144, 255, 0.3);
+    box-shadow: 0 0 15px rgba(100, 149, 237, 0.5), 0 0 30px rgba(100, 149, 237, 0.3);
   }
   
   .light-beam {
     @apply absolute pointer-events-none opacity-0 transition-opacity duration-500;
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.25) 0%, transparent 70%);
+    background: radial-gradient(circle at center, rgba(100, 149, 237, 0.25) 0%, transparent 70%);
     width: 150%;
     height: 150%;
     top: -25%;
