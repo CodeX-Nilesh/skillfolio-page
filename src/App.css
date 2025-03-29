@@ -7,13 +7,13 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: #33C3F0;
   color: #ffffff;
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(50, 50, 50, 0.2) 0%, transparent 30%),
-    radial-gradient(circle at 80% 70%, rgba(30, 30, 60, 0.3) 0%, transparent 40%),
-    radial-gradient(circle at 30% 50%, rgba(100, 108, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.08) 0%, transparent 40%);
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.3) 0%, transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(200, 240, 255, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 30% 50%, rgba(140, 200, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(180, 225, 255, 0.15) 0%, transparent 40%);
   background-attachment: fixed;
 }
 
@@ -55,23 +55,23 @@ body {
   color: #888;
 }
 
-/* Enhanced glass effect for dark theme */
+/* Enhanced glass effect for sky blue theme */
 .glass {
-  background: rgba(30, 30, 40, 0.25) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 /* Glowing accents for hover states */
 .hover-translate:hover {
-  box-shadow: 0 10px 25px rgba(100, 108, 255, 0.15);
+  box-shadow: 0 10px 25px rgba(30, 144, 255, 0.25);
 }
 
 /* Enhanced text colors */
 h1, h2, h3, h4, h5, h6 {
-  background: linear-gradient(to right, #ffffff, #aaaaee);
+  background: linear-gradient(to right, #ffffff, #e0f7ff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -79,14 +79,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-primary\/10 {
-  background-color: rgba(100, 108, 255, 0.15) !important;
+  background-color: rgba(30, 144, 255, 0.15) !important;
 }
 
 .bg-primary {
-  background: linear-gradient(135deg, #646cff, #8b5cf6) !important;
+  background: linear-gradient(135deg, #33C3F0, #1E90FF) !important;
 }
 
 /* Enhanced borders */
 .border-subtle {
-  border-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
 }
